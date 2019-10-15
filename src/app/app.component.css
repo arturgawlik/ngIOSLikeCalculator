@@ -1,0 +1,76 @@
+:host {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    background: black;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    width: 500px;
+    height: 750px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 150px repeat(5, 1fr);
+    
+    grid-template-areas: 
+        "state state state state"
+    ;
+
+    overflow: hidden;
+}
+
+.state {
+    grid-area: state;
+    align-self: end;
+    justify-self: right;
+    font-size: 150px;
+    font-family: sans-serif;
+    color: whitesmoke;
+    font-weight: 100;
+}
+
+.btn {
+    border: none;
+    border-radius: 100%;
+    font-size: 45px;
+}
+
+.zero {
+    grid-column-start: span 2;
+    border-radius: 90px 90px 96px 96px / 85px 85px 85px 85px;
+    text-align: start;
+    padding-left: 40px;
+}
+
+.number-btn {
+    color: whitesmoke;
+    background-color: #282828;
+}
+
+.number-btn:hover {
+    background-color: #646262;
+}
+
+.btn:active {
+    border: 2px solid rgb(136, 133, 133);
+}
+
+.func-btn {
+    color: black;
+    background-color: grey;
+}
+
+.func-btn:hover {
+    background-color: #d0c9c9;
+}
+
+.operation-btn {
+    color: whitesmoke;
+    background-color: #ff8f00;
+}
+
+.operation-btn:hover {
+    background-color: #eaaa58;
+}
